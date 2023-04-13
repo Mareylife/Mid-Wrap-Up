@@ -5,7 +5,14 @@ public class Lecture4Exercises {
      *   lecture 4 page 15
      */
     public long factorial(int n) {
-        return 0L;
+        int temp = n;
+        long result = 1;
+        while (temp >0)
+        {
+            result*= temp;
+            temp--;
+        }
+        return result;
     }
 
     /*
