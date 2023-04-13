@@ -37,7 +37,12 @@ public class Lecture4Exercises {
      *   lecture 4 page 19
      */
     public String reverse(String word) {
-        return null;
+        String temp = "";
+        for (int i = word.length(); i > 0; i--) {
+            temp += word.substring(i-1,i);
+        }
+
+        return temp;
     }
 
     /*
