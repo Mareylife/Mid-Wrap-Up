@@ -21,7 +21,15 @@ public class Lecture4Exercises {
      *   lecture 4 page 19
      */
     public long fibonacci(int n) {
-        return 0;
+        if(n==1){
+            return 1;
+        }
+        else if(n==2){
+            return 1;
+        }
+        else{
+            return fibonacci(n-1) + fibonacci(n-2);
+        }
     }
 
     /*
