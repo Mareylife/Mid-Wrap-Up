@@ -52,7 +52,21 @@ public class Lecture4Exercises {
      *   lecture 4 page 19
      */
     public boolean isPalindrome(String line) {
-        return false;
+        line = line.toLowerCase();
+        line = line.replaceAll(" ","");
+
+        String temp = "";
+        for (int i = line.length(); i > 0; i--) {
+            temp += line.substring(i-1,i);
+        }
+
+        if(temp.equals(line))
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     /*
