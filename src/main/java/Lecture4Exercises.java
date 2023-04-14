@@ -81,6 +81,22 @@ public class Lecture4Exercises {
      *   lecture 4 page 26
      */
     public char[][] dotPlot(String str1, String str2) {
-        return null;
+        char[][] table = new char[str1.length()][str2.length()];
+
+        for(int i = 0; i < str1.length();i++)
+        {
+            for (int j = 0; j < str2.length(); j++) {
+
+                if (str1.substring(i,i+1).equals(str2.substring(j,j+1)))
+                {
+                    table[i][j]= '*';
+                }
+                else {
+                    table[i][j] = ' ';
+                }
+            }
+        }
+        return table;
+
     }
 }
