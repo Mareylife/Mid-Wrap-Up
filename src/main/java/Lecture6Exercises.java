@@ -22,7 +22,12 @@ public class Lecture6Exercises {
      *   lecture 6 page 16
      */
     public int[] reverseArray(int[] arr) {
-        return null;
+        int [] reverse = new int[arr.length];
+        for (int i = 0; i < arr.length; i++)
+        {
+            reverse[i] = arr[arr.length - 1 - i];
+        }
+        return reverse;
     }
 
     /*
