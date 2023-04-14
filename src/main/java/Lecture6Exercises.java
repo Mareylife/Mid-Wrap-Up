@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lecture6Exercises {
@@ -50,7 +51,24 @@ public class Lecture6Exercises {
      *   lecture 6 page 30
      */
     public List<List<String>> arrayToList(String[][] names) {
-        return null;
+        List<String> names1 = new ArrayList<>();
+        List<String> names2 = new ArrayList<>();
+
+        List<List<String>> array = new ArrayList<>();
+        for (int i = 0; i < names.length; i++) {
+            for (int j = 0; j < names[i].length; j++) {
+                if(i == 0)
+                {
+                    names1.add(names[i][j]);
+                }
+                else {
+                    names2.add(names[i][j]);
+                }
+            }
+        }
+        array.add(names1);
+        array.add(names2);
+        return array;
     }
 
     /*
