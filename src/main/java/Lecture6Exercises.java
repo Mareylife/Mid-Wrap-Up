@@ -77,7 +77,28 @@ public class Lecture6Exercises {
      *   lecture 6 page 30
      */
     public List<Integer> primeFactors(int n) {
-        return null;
+        List<Integer> prime = new ArrayList<>();
+        int temp = n;
+        if(n != 1) {
+            for (int i = 2 ; i <= n; i++) {
+                if(temp == 1)
+                {
+                    break;
+                }
+                else {
+                    if(temp % i == 0)
+                    {
+                        while (temp % i == 0)
+                        {
+                            temp = temp / i ;
+                        }
+                        prime.add(i);
+                    }
+                }
+            }
+        }
+
+        return prime;
     }
 
     /*
