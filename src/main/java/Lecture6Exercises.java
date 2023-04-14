@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Lecture6Exercises {
@@ -106,6 +107,9 @@ public class Lecture6Exercises {
      *   lecture 6 page 30
      */
     public List<String> extractWord(String line) {
-        return null;
+        List<String> words = new ArrayList<>();
+        line = line.replaceAll("[@#$%^&*()/,';\\?!]+", "");
+        words = Arrays.asList(line.split(" "));
+        return words;
     }
 }
